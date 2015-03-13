@@ -34,18 +34,19 @@ public class ActivityMain extends ActionBarActivity {
 
    @Override
    public boolean onOptionsItemSelected(MenuItem item){
-	  // Handle action bar item clicks here. The action bar will
-	  // automatically handle clicks on the Home/Up button, so long
-	  // as you specify a parent activity in AndroidManifest.xml.
 	  int id = item.getItemId();
+	  String text = postEditText.getText()
+								.toString();
 
-	  //noinspection SimplifiableIfStatement
 	  if(id == R.id.action_servlet){
-		 new ServletPostAsyncTask().execute(new Pair<Context, String>(this, postEditText.getText()
-																						.toString()));
+		 new ServletPostAsyncTask().execute(new Pair<Context, String>(this, text));
 		 return true;
 	  }
-	  else if(id == 0){}
+	  else if(id == R.id.action_endpoint){
+		 new EndpointsAsyncTask().execute(new Pair<Context, String>(this, text));
+	  }
+	  else if(id == R.id.action_GCM){
+	  }
 
 	  return super.onOptionsItemSelected(item);
    }

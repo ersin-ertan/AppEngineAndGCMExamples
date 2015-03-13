@@ -3,4 +3,7 @@
 
 	<string name="hello_world">Hello world!</string>
 	<string name="action_settings">Servlet Module</string>
+	<string name="action_servlet">Post Servlet</string>
+	<string name="action_endpoint">Post Endpoint</string>
+	<string name="action_GCM">Post GCM</string>
 </resources>

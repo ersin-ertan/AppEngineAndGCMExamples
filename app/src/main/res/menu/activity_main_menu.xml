@@ -6,8 +6,18 @@
 
 
 	<item android:id="@+id/action_servlet"
-	      android:title="@string/action_settings"
+	      android:title="@string/action_servlet"
 	      android:orderInCategory="100"
+	      app:showAsAction="never"/>
+
+	<item android:id="@+id/action_endpoint"
+	      android:title="@string/action_endpoint"
+	      android:orderInCategory="101"
+	      app:showAsAction="never"/>
+
+	<item android:id="@+id/action_GCM"
+	      android:title="@string/action_GCM"
+	      android:orderInCategory="102"
 	      app:showAsAction="never"/>
 
 
