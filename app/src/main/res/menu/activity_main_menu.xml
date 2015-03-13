@@ -2,8 +2,13 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".ActivityMain">
-	<item android:id="@+id/action_settings"
+
+
+
+	<item android:id="@+id/action_servlet"
 	      android:title="@string/action_settings"
 	      android:orderInCategory="100"
 	      app:showAsAction="never"/>
+
+
 </menu>
