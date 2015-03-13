@@ -22,6 +22,7 @@ public class ActivityMain extends ActionBarActivity {
 	  super.onCreate(savedInstanceState);
 	  setContentView(R.layout.activity_main);
 	  ButterKnife.inject(this);
+	  new GcmRegistrationAsyncTask(this).execute();
    }
 
 
